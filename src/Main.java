@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,22 +9,22 @@ public class Main {
         String player = sc.nextLine();
         System.out.println("Player #1: " + player);
 
-
         System.out.println("How many times do you want the loop to run?");
         int loopCount = sc.nextInt();
-
 
         for (int i = 0; i < loopCount; i++) {
             System.out.println(i);
         }
 
-        /* do {
+       /* do {
 
-            System.out.println("Do you find this loop annoying?");
-            Scanner scAnswer = new Scanner(System.in);
-            String answer = scAnswer.nextLine();
 
-        } while (true); */
+           System.out.println("Do you find this loop annoying?");
+           Scanner scAnswer = new Scanner(System.in);
+           String answer = scAnswer.nextLine();
+
+
+       } while (true); */
 
         boolean isPlaying = true;
 
@@ -59,5 +60,25 @@ public class Main {
             }
 
         } while (isRunning);
+
+        while (true) {
+
+            System.out.println("Type in an integer");
+            Scanner number = new Scanner(System.in);
+
+            if (number.hasNextInt()) {
+                int userNumber = number.nextInt();
+                System.out.println("You entered: " + userNumber);
+                break;
+            } else {
+                System.out.println("Invalid input. Please enter an integer!");
+                number.nextLine();
+            }
+
+        }
     }
 }
+
+
+
+
