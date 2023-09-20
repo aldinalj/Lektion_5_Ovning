@@ -17,13 +17,26 @@ public class Main {
             System.out.println(i);
         }
 
-        do {
+        /* do {
 
             System.out.println("Do you find this loop annoying?");
             Scanner scAnswer = new Scanner(System.in);
             String answer = scAnswer.nextLine();
 
-        } while (true);
+        } while (true); */
 
+        boolean isPlaying = true;
+
+        do {
+
+            System.out.println("Do you want to run or stop?");
+            Scanner scRunStop = new Scanner(System.in);
+            String runOrStop = scRunStop.nextLine();
+
+            if (runOrStop.equals("stop")) {
+                isPlaying = false;
+            }
+
+        } while (isPlaying);
     }
 }
