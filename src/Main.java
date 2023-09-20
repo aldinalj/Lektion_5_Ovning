@@ -8,5 +8,12 @@ public class Main {
         String player = sc.nextLine();
         System.out.println("Player #1: " + player);
 
+        System.out.println("How many times do you want the loop to run?");
+        int loopCount = sc.nextInt();
+
+        for (int i = 0; i < loopCount; i++) {
+            System.out.println(i);
+        }
+
     }
 }
