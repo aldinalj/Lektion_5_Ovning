@@ -38,5 +38,26 @@ public class Main {
             }
 
         } while (isPlaying);
+
+        boolean isRunning = true;
+
+        do {
+
+            System.out.println("Write 1 or stop");
+            Scanner scOneStop = new Scanner(System.in);
+            String switcheroo = scOneStop.nextLine();
+
+            switch (switcheroo) {
+                case "stop":
+                    isRunning = false;
+                    break;
+                case "1":
+                    System.out.println("Throwing");
+                    break;
+                default:
+                    System.out.println("Wrong input");
+            }
+
+        } while (isRunning);
     }
 }
